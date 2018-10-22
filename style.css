@@ -1,0 +1,26 @@
+
+.body{
+    height: 100%;
+    width:100%;
+    display: flex;
+    align-content: center;
+    align-items:center;
+}
+#titre {
+    display:flex;
+    margin:auto;
+    padding: 0;
+}
+.containerA {
+    background-color:blue;
+    opacity:.5;
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto;
+    width:600px;
+    height: 300px;
+    border-style: double;
+    border-width: 2px;
+    border-color: black; 
+}
+
