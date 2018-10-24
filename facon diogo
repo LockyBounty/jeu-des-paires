@@ -1,0 +1,70 @@
+var dois_tableau=["img/three.jpg","img/two.jpg","img/first.jpg","img/four.jpg","img/five.jpg","img/six.jpg","img/sept.jpg"];
+var te=0;
+var first_img;
+var second_img;
+var lock=false;
+var front;
+var back;
+function selectAllImages(testet){  
+  var d =document.querySelectorAll('img');
+      for(var i = 0; i<d.length;i++){  
+            dois_tableau= dois_tableau.concat(dois_tableau);
+            
+             //var diogo=Math.floor(Math.random()*dois_tableau.length);
+              for(a=0;a<dois_tableau.length;a++){
+                dois_tableau[a];
+                back=d[i]=dois_tableau[a];
+                front=dois_tableau[a]=d[i];
+                //let revelarImagem =front.src=(back)
+                console.log(front)
+                console.log(back)
+         a++
+         i++
+       }      
+}
+}
+
+dois_tableau= dois_tableau.concat(dois_tableau);
+function start() {
+if (lock)return false;
+ if(te==0){
+ 	first_img=this;
+ 	first_img=first_img.src=(back);
+  console.log(first_img)
+ 	te++;
+ }else if(te==1){
+ 	 second_img=this;
+ 	second_img=second_img.src;
+ 	console.log(second_img);
+ 	te--;
+ 	check();
+  openPicture();
+ }
+  }
+  var je=14;
+  function check(){
+  let isMatch=first_img===second_img;
+  	console.log(isMatch);
+  	!isMatch?disable():reset(); 
+}
+function openPicture(){
+  first_img=this;
+  first_img=front.src=(back);
+  second_img=this;
+  second_img.src=(back);
+}
+  function disable(){
+  	setTimeout(()=>{
+  	lock=true;
+  	reset();
+  },1000);
+  }
+  function reset(){
+  	[first_img,second_img,lock]=[null,null,false]
+  }
+	let gaming=document.getElementsByClassName("game");
+	for(i=0;i<gaming.length;i++)
+	gaming[i].addEventListener("click", start);
+
+
+
